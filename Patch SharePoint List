@@ -1,0 +1,5 @@
+//Patches List 
+Patch(listname,Defaults(listname),{fieldname:....})
+
+//Patches List after a Valid Form Submit. This can go after the SubmitForm(), or on the Forms OnSuccess property
+SubmitForm(Form1);Patch(listname,formName.LastSubmit,{fieldname:....})
