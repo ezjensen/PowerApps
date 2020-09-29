@@ -1,0 +1,6 @@
+20*Len(Label1.Text)
+
+//LINK
+https://powerusers.microsoft.com/t5/Power-Apps-Ideas/Auto-Width-for-controls/idi-p/57368
+
+If(Len(TextInput1.Text)=0, 20, 20*Len(TextInput1.Text))
