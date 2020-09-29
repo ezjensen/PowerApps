@@ -1,0 +1,15 @@
+//Used for the Deep Linking to items in the Power Automate emails
+//Use this code in the App OnStart Property. You will need to adjust the variables and Param to match your app.  
+//The "PartnerContact" will the same as what you have your gallery (ThisItem set to).
+
+Set(varContactID, Value(Param("ContactID")));
+If (varContactID <> 0, Set(varPartnerContact, LookUp(varPartnerContacts,ID = varContactID));Navigate('Create or Edit Partner Contact',ScreenTransition.None));
+
+
+/*LINKS TO VIDEOS
+
+https://powerapps.microsoft.com/en-us/blog/powerapps-deep-linking/
+
+https://www.youtube.com/watch?v=A5Pi5P2YKds
+
+*/
