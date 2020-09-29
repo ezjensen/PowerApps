@@ -1,0 +1,6 @@
+If(User().Email =
+    "ericjen@cdw.com" Or //Eric Jensen
+    "valyspe@cdw.com",   //Valya Grempka
+    false, 
+    true
+)
